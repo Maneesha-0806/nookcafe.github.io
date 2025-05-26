@@ -1,169 +1,136 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>The Reading Nook Cafe</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Mansalva&family=Walter+Turncoat&display=swap" rel="stylesheet">
-        <style>
-            .container-fluid{
-                background-color: #FFF0D1;
-                color: #503C3C;
-            }
-            p,a{
-                font-family: "Alumni Sans Pinstripe", sans-serif;
-                font-weight: 600;
-                font-size: larger;
-            }
-            h1{
-                font-family: "Walter Turncoat", cursive;
-                font-weight: 400;
-                font-style: normal;
-                font-size: 5rem;
-                color: #A67B5B;
-                margin-bottom: 0;
-            }
-            h3{
-                font-family: "Mansalva", sans-serif;
-                font-weight: 400;
-                font-style: normal;
-                color:#543310;
-                background-color: #FFF0D1;
-                padding-bottom: 2px;
-            }
-            .header{
-                display: flex;
-                justify-content: space-between;
-            }
-            .header > ul.navbar{
-                display: inline-flex;       
-            }
-            .navbar a{
-                color:#503C3C;
-                padding: .5rem;
-            }
-            .logo{
-                float:left;
-                height: 7rem;
-                width:10rem;
-            }
-            .arrivals{
-                text-align: center;
-                background-image: url("images/desktop_wallpaper.jpg");
-                background-size: cover;
-                color: white;
-            }
-            #slideshow {
-                overflow-x: hidden;
-                overflow:visible;
-                height: 545px;
-                width: 900px;
-                margin: 30px auto;
-            }         
-            .slide {
-                float: left;
-                height: 545px;
-                width: 900px;
-            }
-            .slide-wrapper {
-                width: calc(900px * 4);
-                animation: slide 20s cubic-bezier(0.5, 0.7, 0.7, 0.7) infinite;
-            }
-            .slide> img{
-                margin-right: 20px;
-            }
-            @keyframes slide {
-                20% {
-                    margin-left: 0px;
-                }
-                30% {
-                    margin-left: 0px;
-                }
-                40% {
-                    margin-left: calc(-900px * 1);
-                }
-                50% {
-                    margin-left: calc(-900px * 1);
-                }
-                60% {
-                    margin-left: calc(-900px * 2);
-                }
-                70% {
-                    margin-left: calc(-900px * 2);
-                }
-                80% {
-                    margin-left: calc(-900px * 3);
-                }
-                90% {
-                    margin-left: calc(-900px * 3);
-                }
-            }
-            .address{
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container-fluid">
-            <span class="header">
-                <img src="images/logo.png" class="logo"/>
-                <ul class="navbar" style="list-style-type: none;">
-                    <li><a href='about.html'>About us</a></li>
-                    <li><a href='menu.html'>Menu</a></li>
-                    <li><a href='books.html'>Books</a></li>
-                    <li><a href='contact.html'>Contact Us</a></li>
-                </ul>
-            </span>
-            <h1 style="text-align: center;">THE READING NOOK CAFE</h1>
-            <hr>
-            <div class="arrivals">
-                <h3>Latest Summer Delights</h3>
-                <div id="slideshow" class="container">
-                    <div class="slide-wrapper">
-                        <div class="slide">
-                            <img src="images/cold_brew.jpg" height="500px" width="850px">
-                        </div>
-                        <div class="slide">
-                            <img src="images/frappe.jpg" height="500px" width="850px">
-                        </div>
-                        <div class="slide">
-                            <img src="images/affogato.jpg" height="500px" width="850px">
-                        </div>
-                        <div class="slide">
-                            <img src="images/mocktails.jpg" height="500px" width="850px">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="address">
-                <h3 style="font-size: 40px;">Meet Us At</h3>
-                <br>
-                <h5>Chennai</h5>
-                <p>1024, Washington street, Nandhanam</p>
-                <br>
-                <h5>Bengaluru</h5>
-                <p>34, 4th sector, Whitefeild</p>
-            </div>
-            <footer class="header" style="background-color: #A79277; font-size: 20px;">
-                <p>&copy;the_reading_nook_cafe</p>
-                <ul class="navbar" style="list-style-type: none;">
-                    <li><a href="#"><i class="bi bi-instagram" style="font-size: 2rem;"></i></a></li>
-                    <li><a href="#"><i class="bi bi-facebook" style="font-size: 2rem;"></i></a></li>
-                    <li><a href="#"><i class="bi bi-twitter" style="font-size: 2rem;"></i></a></li>
-                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16" >
-                        <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
-                    </svg></a></li>
-                </ul>
-            </footer>
+<html lang="en">
+  <head>
+    <title>The Reading Nook Cafe</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Mansalva&family=Walter+Turncoat&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        background-color: #FFF0D1;
+        color: #503C3C;
+      }
+      p, a {
+        font-family: "Alumni Sans Pinstripe", sans-serif;
+        font-weight: 600;
+        font-size: 1.5rem;
+      }
+      h1 {
+        font-family: "Walter Turncoat", cursive;
+        font-size: 5rem;
+        color: #A67B5B;
+        text-align: center;
+      }
+      h3 {
+        font-family: "Mansalva", sans-serif;
+        color: #543310;
+        background-color: #FFF0D1;
+        padding-bottom: 0.2rem;
+        font-size: 2.5rem;
+      }
+      .logo {
+        height: 7rem;
+      }
+      .arrivals {
+        background: url("images/desktop_wallpaper.jpg") no-repeat center center/cover;
+        color: white;
+        padding: 2rem 0;
+      }
+      footer {
+        background-color: #A79277;
+        font-size: 2rem;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .social-icons a {
+        color: #503C3C;
+        margin-left: 1rem;
+      }
+      .nav-item a {
+        color: #503C3C;
+        margin: 0 0.5rem;
+        font-size: 1.5rem;
+      }
+      @media (max-width: 576px) {
+      h1 {
+        font-size: 2rem;
+      }
+      h3{
+        font-size: 1.5rem;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid px-4">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" class="logo" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="books.html">Books</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
         </div>
-    </body>
+      </nav>
+      <h1>THE READING NOOK CAFE</h1>
+      <hr>
+      <div class="arrivals text-center">
+        <h3>Latest Summer Delights</h3>
+        <div class="container overflow-hidden">
+          <div id="summerCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="images/cold_brew.jpg" class="d-block w-100 rounded" alt="Cold Brew">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="images/frappe.jpg" class="d-block w-100 rounded" alt="Frappe">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="images/affogato.jpg" class="d-block w-100 rounded" alt="Affogato">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="images/mocktails.jpg" class="d-block w-100 rounded" alt="Mocktails">
+                  </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#summerCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#summerCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="address text-center mb-5">
+        <h3>Meet Us At</h3>
+        <h5>Chennai</h5>
+        <p>1024, Washington street, Nandhanam</p>
+        <h5>Bengaluru</h5>
+        <p>34, 4th sector, Whitefield</p>
+      </div>
+      <footer>
+        <p>&copy; the_reading_nook_cafe</p>
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+          <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+          <a href="#"><i class="bi bi-twitter fs-4"></i></a>
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16" ><path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/></svg></a>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
