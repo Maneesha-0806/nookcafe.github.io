@@ -4,7 +4,7 @@ Hi there! 👋 I'm **Maneesha**, and this is one of my early web development pro
 
 ## 🌐 Live Demo
 
-🖱️ [Check out the live site](https://maneesha1306.github.io/nookcafe.github.io/)
+🖱️ [Check out the live site](https://maneesha-0806.github.io/nookcafe.github.io/)
 
 ## 🎯 Project Purpose
 
@@ -48,7 +48,7 @@ This project was created as a part of my web development learning journey. The g
 
 I'm Maneesha, a student passionate about learning web development and design. This is one of my first steps into building websites, and I’m excited to keep learning and growing! 🌱
 
-👉 [Visit my GitHub Profile](https://github.com/maneesha1306)
+👉 [Visit my GitHub Profile](https://github.com/Maneesha-0806))
 
 ---
 
